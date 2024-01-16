@@ -1,3 +1,3 @@
 Some text
-Changes added on GitHub
+Changes put together on GitHub
 More changes added on GitHub
