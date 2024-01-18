@@ -18,7 +18,7 @@ Here is how the login page would look:
 
 Here is how the itinerary page would look:
 
-![Itinerary Page](images/itinerarypage.png)
+![Itinerary Page](images/itinerarypage2.png)
 
 ### Key features
 
