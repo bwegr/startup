@@ -9,7 +9,7 @@ Notes can be found [here](https://github.com/bwegr/startup/blob/main/notes.md)
 
 ### Elevator pitch
 
-Have you ever traveled to a new country and spent countless hours preparing for the trip? Have you ever gotten to that country and realized that, even with those hours  of research, you were unprepared for something? Figuring out the type of currency you need, visas, vaccines, electrical adapters, etc. can be so time-consuming and arduous! The Global Traveler Tool allows you to get the critical info you need about the countries you are traveling to all in one place in the blink of eye. Users can search countries one by one or create custom itineraries with any number of countries and get essential information in a concise and direct form to ensure their international travel, no matter how complex, will go smoothly.
+Have you ever traveled to a new country and spent countless hours preparing for the trip? Have you ever gotten to that country and realized that, even with those hours  of research, you were unprepared for something? Figuring out the type of currency you need, visas, vaccines, electrical adapters, etc. can be so time-consuming and arduous! The Global Traveler Tool allows you to get the critical info you need about the countries you are traveling to all in one place in the blink of an eye. Users can search countries one by one or create custom itineraries with any number of countries and get essential information in a concise and direct form to ensure their international travel, no matter how complex, will go smoothly.
 
 ### Design
 Here is how the login page would look:
