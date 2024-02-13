@@ -16,10 +16,43 @@ main {
   /* justify-content: space-around; */
 }
 
+#login-box {
+  flex: 1 calc(100vh - 110px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: black 5px !important;
+}
+
 h2 {
   font-family: Brush Script MT, Brush Script Std, cursive;
   font-size: 76px;
 }
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+}
+
+#name #pass {
+  display: flex;
+  width: 10px !important;
+}
+
+input {
+  display: flex;
+  width: 250px !important;
+}
+
+button {
+  width: 250px;
+  height: 35px;
+  margin: 20px !important;
+}
+
+#register {float: left;}
 
 footer {
   flex: 0 30px;

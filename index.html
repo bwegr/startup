@@ -39,18 +39,20 @@
     </header>
 
     <main>
+      <div id="login-box">
       <h2>The Global Travel Tool</h2>
-      <img width="150px" src="images/globe.png" alt="random"/>
       <p>Login to plan your global travel</p>
-      <form method="get" action="itinerary.html">
+      <img width="150px" src="images/globe.png" alt="random"/><br>
+      <form method="get" action="itinerary.html" class="login">
         <!-- <label for="name">Name</label> -->
-        <input type="text" id="name" placeholder="Username" /><br>
+        <input id="name" placeholder="Username" />
         <!-- <label for="pass">Password</label> -->
-        <input type="text" id="pass" placeholder="Password" /><br><br>
-        <button type="submit">Login</button>
-        <button type="forgot">Forgot Password?</button>
-        <button type="submit">Register</button>
+        <input type="text" id="pass" placeholder="Password" />
+        <button type="submit" id="login">Login</button>
+        <a href="" id="register">Register</a>
+        <a href="" id="forgot">Forgot Password?</a>
       </form><br>
+    </div>
     </main>
 
     <footer>
