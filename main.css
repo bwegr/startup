@@ -16,6 +16,11 @@ main {
   justify-content: space-around;
 }
 
+h2 {
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  font-size: 76px;
+}
+
 footer {
   flex: 0 30px;
 }
