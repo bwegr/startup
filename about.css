@@ -70,6 +70,16 @@ main > p {
   width: 900px;
 }
 
+.country {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h3 {
+  margin-top: 100px;
+}
+
 footer {
   display: flex;
   flex-direction: column;
