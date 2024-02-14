@@ -71,13 +71,20 @@ main > p {
 }
 
 form {
-  width: 1000px;
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 5px 5px 5px 5px;
 }
 
-.country {
+.country .itin {
   display: flex;
   flex-direction: column;
   align-items: center;
+  float: right;
 }
 
 button {
@@ -105,9 +112,9 @@ button {
   border-image: initial;
 }
 
-#passport {
+/* #passport {
   margin-bottom: 10px;
-}
+} */
 
 h3 {
   margin-top: 90px;
