@@ -1,3 +1,36 @@
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Aligns logo to the left and menu to the right */
+  align-items: center;
+  background-color: rgb(207, 32, 32);
+  padding: 5px 20px; /* Adjusts the padding inside the navbar */
+  position: sticky; /* Makes navbar stick to the top */
+  top: 0; /* Ensures it sticks at the very top */
+  z-index: 1000; /* Ensures navbar stays above other content */
+}
+
+menu {
+  list-style: none; /* Removes bullet points from the menu */
+  display: flex; /* Aligns menu items in a row */
+}
+
+menu > li {
+  padding: 0 15px; /* Adds horizontal padding between menu items */
+}
+
+menu > li a {
+  text-decoration: none; /* Removes underline from links */
+  color: black; /* Sets menu item color */
+  font-size: 16px; /* Adjusts menu item font size */
+}
+
+/* Optional: Add a hover effect to menu items */
+menu > li a:hover {
+  color: #007bff; /* Changes color on hover */
+}
+
+
+
 .picture-box {
   height: calc(100px + 1em);
   margin-bottom: 1em;

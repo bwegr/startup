@@ -16,6 +16,15 @@ main {
   /* justify-content: space-around; */
 }
 
+main > p {
+  width: 900px;
+}
+
+main > span {
+  align-items: center;
+  padding-bottom: 20px;
+}
+
 #login-box {
   display: flex;
   flex-direction: column;
