@@ -70,6 +70,6 @@ For this deliverable I properly styled the application into its final appearance
 - **Navigation elements** (20%) - Each page, besides the login page, has a menu in the top right with links to the other pages. Text decoration is removed to make them look nice. A logo is also added on the top left that links to the main page.
 - **Responsive to window resizing** (10%) - Each page is responsive to window re-sizing.
 - **Application elements** (20%) - Application elements include a login page, a page where you can look up country information, a page where create itineraries, and an About page. I also used stylistic elements like whitespace, shadows, and different variations of the color gray to accent buttons and boxes.
-- **Application text content** (10%) - The application has text content on each page
-- **Application images** (10%) - The application has images on each page
+- **Application text content** (10%) - The application has text content on each page.
+- **Application images** (10%) - The application has images on each page.
 
