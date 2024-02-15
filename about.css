@@ -100,12 +100,16 @@ button {
 .cbutton {
   height: auto;
   font-size: 15px;
-  /* margin: 5px !important; */
-  border: 1px solid rgb(160, 160, 160);
+  margin: 5px !important;
+  border: 1px solid rgb(221, 221, 221);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  background-color: rgb(196, 196, 196);
+  background-color: rgb(231, 231, 231);
   color: rgb(32, 32, 32);
   padding: 10px;
+}
+
+.cbutton > p {
+  margin-bottom: 5px;
 }
 
 #search {
