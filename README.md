@@ -33,7 +33,6 @@ Here is how the itinerary page would look:
 - Ability to create itineraries shared with other users
 - Itinerary page allows user to input their country's passport to get visa requirements (cost, application link)
 
-
 ### Technologies
 
 I am going to use the required technologies in the following ways.
@@ -48,3 +47,29 @@ I am going to use the required technologies in the following ways.
 - **DB/Login** - Store users, itineraries, and country info in database. Register and login users. Credentials securely stored in database. Can't enter, search countries, or create itineraries unless authenticated.
 - **WebSocket** - Allows itineraries to be shared with other users and viewed live with real-time changes from other users
 - **React** - Application ported to use the React web framework.
+
+## HTML deliverable
+
+For this deliverable I built out the structure of my application using HTML.
+
+- **HTML pages** (20%) - Each component of my application has a page (Login, About, Country, Itinerary).
+- **HTML Tags** (10%) - I use HTML tags properly including BODY, NAV, MAIN, HEADER, FOOTER, MENU, P, B, DIV, SPAN, UL, LI, H2, etc.
+- **Links** (10%) - Links exist between pages as necessary.
+- **Application textual content** (10%) - Got it. Text content on each page.
+- **Placeholder for 3rd party service calls** (10%) - These include Security Risk - for UN Security Level accessed by API, Recent News, Freedom Index, Population, Currency, Major SIM/Cell/Internet providers, Pollution Levels, UN Standing.
+- **Application images** (10%) - Country page includes image for country flag as well as the itinerary page.
+- **Login placeholder, including user name display** (10%) - This is the main page (index.html).
+- **Database** (10%) - Data placeholders include user information, itineraries, basic country info (age, capital, etc.), and flag images. 
+- **WebSocket data placeholder** (10%) - Real-time data will be exchanged and displayed about users added to itineraries.
+
+## CSS deliverable
+
+For this deliverable I properly styled the application into its final appearance.
+
+- **Header, footer, and main content body** (30%) - I have the same header and footer for each of the four pages (except the main login page which doesn’t have a header) and unique body content for each as well.
+- **Navigation elements** (20%) - Each page, besides the login page, has a menu in the top right with links to the other pages. Text decoration is removed to make them look nice. A logo is also added on the top left that links to the main page.
+- **Responsive to window resizing** (10%) - Each page is responsive to window re-sizing.
+- **Application elements** (20%) - Application elements include a login page, a page where you can look up country information, a page where create itineraries, and an About page. I also used stylistic elements like whitespace, shadows, and different variations of the color gray to accent buttons and boxes.
+- **Application text content** (10%) - The application has text content on each page.
+- **Application images** (10%) - The application has images on each page.
+
