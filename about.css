@@ -193,9 +193,16 @@ footer {
   position: relative;
   background-color: #fefefe;
   margin: 10% auto; /* 10% from the top and centered */
-  padding: 20px;
+  padding-bottom: 50px;
   border: 1px solid #888;
   width: 30%; /* Could be more or less, depending on screen size */
+}
+
+.modal-buttons {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
 }
 
 /* The Close Button */
@@ -204,6 +211,8 @@ footer {
   float: right;
   font-size: 28px;
   font-weight: bold;
+  margin-left: 20px;
+  margin-top: 10px;
 }
 
 .close-button:hover,.close-button:focus {
