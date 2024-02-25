@@ -237,7 +237,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   addButton.addEventListener('click', addUsernameToList);
   removeButton.addEventListener('click', removeUsernameFromList);
-});
+
 
 // Get the modal
 var modal = document.getElementById("myModal");
@@ -257,3 +257,4 @@ window.onclick = function(event) {
   }
 }
 
+});
