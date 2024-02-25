@@ -187,3 +187,55 @@ setInterval(() => {
     `<div class="event"><span class="player-event">Eich</span> scored ${score}</div>` +
     chatText.innerHTML;
 }, 5000);
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const addButton = document.getElementById('addUserButton');
+  const removeButton = document.getElementById('removeUserButton');
+  const list = document.getElementById('userList');
+
+  function addUsernameToList() {
+      const username = localStorage.getItem('userName');
+
+      if(username) {
+          const span = document.createElement('span');
+          span.textContent = username;
+          span.id = 'user-' + username; // Unique ID for the span
+
+          if(list.hasChildNodes()) {
+              list.appendChild(document.createTextNode(', '));
+          }
+
+          list.appendChild(span);
+      } else {
+          alert('Username not found in local storage.');
+      }
+  }
+
+  function removeUsernameFromList() {
+      const username = localStorage.getItem('userName');
+
+      if(username) {
+          const spanId = 'user-' + username;
+          const span = document.getElementById(spanId);
+
+          if(span) {
+              // Remove the span and its preceding separator, if present
+              const previousSibling = span.previousSibling;
+              if(previousSibling && previousSibling.nodeType === Node.TEXT_NODE) {
+                  list.removeChild(previousSibling);
+              }
+
+              list.removeChild(span);
+          } else {
+              alert('You have not joined this itinerary');
+          }
+      } else {
+          alert('Username not found in local storage.');
+      }
+  }
+
+  addButton.addEventListener('click', addUsernameToList);
+  removeButton.addEventListener('click', removeUsernameFromList);
+});
+

@@ -112,6 +112,18 @@ button {
   margin-bottom: 5px;
 }
 
+#addUserButton {
+  margin-top: 10px;
+  background-color: rgba(72, 88, 72, 0.699);
+  color: white;
+}
+
+#removeUserButton {
+  margin-top: 10px;
+  background-color: rgba(88, 72, 72, 0.699);
+  color: white;
+}
+
 #search {
   appearance: auto;
   color: buttontext;
