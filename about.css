@@ -195,7 +195,7 @@ footer {
   margin: 10% auto; /* 10% from the top and centered */
   padding-bottom: 50px;
   border: 1px solid #888;
-  width: 30%; /* Could be more or less, depending on screen size */
+  width: 27%; /* Could be more or less, depending on screen size */
 }
 
 .modal-buttons {
@@ -220,6 +220,11 @@ footer {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+.pinfo {
+  margin-left: 20%;
+  margin-top: 20px;
 }
 
 .accordion {
