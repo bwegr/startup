@@ -188,7 +188,7 @@ setInterval(() => {
     chatText.innerHTML;
 }, 5000);
 
-
+// Adding and Removing User From Itinerary
 document.addEventListener('DOMContentLoaded', function() {
   const addButton = document.getElementById('addUserButton');
   const removeButton = document.getElementById('removeUserButton');
@@ -239,6 +239,7 @@ document.addEventListener('DOMContentLoaded', function() {
   removeButton.addEventListener('click', removeUsernameFromList);
 });
 
+// Add To Itinerary Modal 
 document.addEventListener('DOMContentLoaded', (event) => {
   var modal = document.getElementById("myModal");
   var btn = document.getElementById("addToI");
@@ -259,6 +260,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   }
 });
 
+// Currency Conversion Rate Websocket Simulator
 function currConv(min, max) {
   return (Math.random() * (max - min) + min).toFixed(2);
 }
