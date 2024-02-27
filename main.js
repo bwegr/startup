@@ -253,11 +253,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 function pname1() {
   const userName = localStorage.getItem('userName');
-
-  // Check if userName is not null
   if (userName) {
-    const pname = document.getElementById('pname');
-    pname.textContent = userName;
+    const userNameDisplays = document.querySelectorAll('.pname');
+    userNameDisplays.forEach((element) => {
+      element.textContent = userName;
+    });
   } else {
     console.log('userName not found in localStorage.');
   }
