@@ -18,6 +18,7 @@ Promise: delaying future execution until resolution of something
 Async, Await: API doesn't let linear code be blocked
 
 
+![image](https://github.com/bwegr/startup/assets/67449500/5c735c35-ca47-42ce-9224-c5371f7da13b)
 
 
 
