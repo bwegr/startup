@@ -31,18 +31,37 @@
           <li><a href="country.html">Country</a></li>
           <li><a href="itinerary.html">Itinerary</a></li>
           <li><a href="about.html">About</a></li>
-          <li>Profile - <span class="player-name"></span></li>
+          <li id="profile">Profile - <span class="player-name"></span></li>
         </menu>
       </nav>
     </header>
 
     <main>
+
+    <!-- Profile Modal -->
+    <div id="pModal" class="pmodal">
+      <div class="modal-content">
+        <span class="pclose-button">&times;</span>
+        <div class="modal-buttons">
+          <h4>Welcome <span id="pname">User</span>!</h4>
+          <img src="images/anon.png" width="150px" alt="anon-user"><br>
+          <button type="search">Edit Profile</button>
+          <form class="itin">
+            <input type="text" id="country" placeholder="Search Itineraries" /><br>
+            <button type="search" id="search">Search</button>
+          </form>
+        </div>
+        <!-- You can add more content here -->
+      </div>
+    </div>
+
 <h3>Search Country</h3>
 <form method="get" action="country.html" class="country">
   <input type="text" id="country" placeholder="Destination Country" />
   <input type="text" id="passport" placeholder="Passport Country" />
   <button type="search" id="search">Search</button>
 </form>
+<!-- <h4>Welcome <span id="pname">User</span>!</h4> -->
 <hr/>
 
 <div id="picture" class="picture-box"><img width="150px" src="images/uae.png" alt="random" /></div>

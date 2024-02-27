@@ -239,6 +239,33 @@ document.addEventListener('DOMContentLoaded', function() {
   removeButton.addEventListener('click', removeUsernameFromList);
 });
 
+// Profile Modal 
+document.addEventListener('DOMContentLoaded', (event) => {
+  var pmodal = document.getElementById("pModal");
+  var btn = document.getElementById("profile");
+  var span = document.getElementsByClassName("pclose-button")[0];
+
+  btn.onclick = function() {pmodal.style.display = "block";}
+  span.onclick = function() {pmodal.style.display = "none";}
+  window.onclick = function(event) {
+      if (event.target == pmodal) {pmodal.style.display = "none";}}
+  });
+
+function pname1() {
+  const userName = localStorage.getItem('userName');
+
+  // Check if userName is not null
+  if (userName) {
+    const pname = document.getElementById('pname');
+    pname.textContent = userName;
+  } else {
+    console.log('userName not found in localStorage.');
+  }
+}
+
+// Call the function to display the userName when the page loads
+document.addEventListener('DOMContentLoaded', pname1);
+
 // Add To Itinerary Modal 
 document.addEventListener('DOMContentLoaded', (event) => {
   var imodal = document.getElementById("iModal");
@@ -246,9 +273,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   var span = document.getElementsByClassName("close-button")[0];
 
   btn.onclick = function() {imodal.style.display = "block";}
-
   span.onclick = function() {imodal.style.display = "none";}
-
   window.onclick = function(event) {
       if (event.target == imodal) {imodal.style.display = "none";}}
 });
