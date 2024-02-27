@@ -241,23 +241,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Add To Itinerary Modal 
 document.addEventListener('DOMContentLoaded', (event) => {
-  var modal = document.getElementById("myModal");
+  var imodal = document.getElementById("iModal");
   var btn = document.getElementById("addToI");
   var span = document.getElementsByClassName("close-button")[0];
 
-  btn.onclick = function() {
-      modal.style.display = "block";
-  }
+  btn.onclick = function() {imodal.style.display = "block";}
 
-  span.onclick = function() {
-      modal.style.display = "none";
-  }
+  span.onclick = function() {imodal.style.display = "none";}
 
   window.onclick = function(event) {
-      if (event.target == modal) {
-          modal.style.display = "none";
-      }
-  }
+      if (event.target == imodal) {imodal.style.display = "none";}}
 });
 
 // Currency Conversion Rate Websocket Simulator
