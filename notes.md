@@ -14,6 +14,7 @@ JavaScript RegEx: ("cow", "rat", "fish") -> "/A|f/i" -> rat and fish
 - i = case insensitive
 
 Promise: delaying future execution until resolution of something
+
 Async, Await: API doesn't let linear code be blocked
 
 
