@@ -259,4 +259,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
   }
 });
 
+function currConv(min, max) {
+  return (Math.random() * (max - min) + min).toFixed(2);
+}
+
+function updateRandomNumber() {
+  const curconSpan = document.getElementById('curcon');
+  curconSpan.textContent = currConv(3.53, 3.74);
+}
+
+setInterval(updateRandomNumber, 1000); // Update every 1 second
+
 
