@@ -289,5 +289,3 @@ function updateRandomNumber() {
 }
 
 setInterval(updateRandomNumber, 1000); // Update every 1 second
-
-
