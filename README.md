@@ -77,8 +77,8 @@ For this deliverable I properly styled the application into its final appearance
 
 For this deliverable I added some functionality with JavaScript.
 
-- **JavaScript support for future login** (20%) - The main login page now has the ability for someone to type in a username that is then put in local storage and put in the top right corner of every page to simulate a login
-- **JavaScript support for future database data** (20%) - The username is currently retrieved from local storage but wil later be retrieved from a database (in addition to the password). If you click on the username in the top right, I've added a profile page that pops up, which will also be filled with info from the database.
+- **JavaScript support for future login** (20%) - The main login page now has the ability for someone to type in a username that is then put in local storage and placed in the top right corner of every page to simulate a login
+- **JavaScript support for future database data** (20%) - The username is currently retrieved from local storage but will later be retrieved from a database (in addition to the password). If you click on the username in the top right, I've added a profile page that pops up, which will also be filled with info from the database.
 - **JavaScript support for future WebSocket** (20%) - I've used JavaScript to create a function that simulates updating the AED to USD currency exchange rate in real time but is actually just displaying random numbers every 1000ms that are close to the real exchange rate. This will be replaced by a WebSocket with real-time data later. This is found inside the Currency accordion on the Country page.
 - **JavaScript support for your application's interaction logic** (40%) - I've also used JavaScript to add the following interactions:
 	- Accordions on the Country page with +- animation (Bootstrap 5 JS) - I'll add more of these.
