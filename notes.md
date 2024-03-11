@@ -21,4 +21,11 @@ Async, Await: API doesn't let linear code be blocked
 ![image](https://github.com/bwegr/startup/assets/67449500/5c735c35-ca47-42ce-9224-c5371f7da13b)
 
 
-
+Node.js
+Create your project directory
+Initialize it for use with NPM by running npm init -y
+Make sure .gitignore file contains node_modules
+Install any desired packages with npm install <package name here>
+Add require('<package name here>') to your application's JavaScript
+Use the code the package provides in your JavaScript
+Run your code with node index.js
