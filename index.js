@@ -15,7 +15,16 @@ var apiRouter = express.Router();
 app.use(`/api`, apiRouter);
 
 
-// Get Itineraries
+// GetItineraries
+apiRouter.get('/itins', (_req, res) => {
+  res.send(itins);
+});
+
+// CreateNewItinerary
+apiRouter.post('/itin', (req, res) => {
+  //itins = updateScores(req.body, scores);
+  res.send(itins);
+});
 
 // GetScores
 apiRouter.get('/scores', (_req, res) => {
