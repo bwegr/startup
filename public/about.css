@@ -175,7 +175,7 @@ footer {
 }
 
 /* The Modal (background) */
-.modal, .pmodal {
+.modal, .pmodal, .nimodal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -206,7 +206,7 @@ footer {
 }
 
 /* The Close Button */
-.close-button, .pclose-button {
+.close-button, .pclose-button, .nclose-button {
   color: #aaa;
   float: right;
   font-size: 28px;
@@ -216,7 +216,8 @@ footer {
 }
 
 .close-button:hover,.close-button:focus,
-.pclose-button:hover,.pclose-button:focus {
+.pclose-button:hover,.pclose-button:focus,
+.nclose-button:hover,.nclose-button:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;

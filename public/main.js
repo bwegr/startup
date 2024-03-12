@@ -278,11 +278,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
       if (event.target == imodal) {imodal.style.display = "none";}}
 });
 
-// Add To Itinerary Modal 
+// Create New Itinerary Modal 
 document.addEventListener('DOMContentLoaded', (event) => {
-  var imodal = document.getElementById("iModal");
-  var btn = document.getElementById("addToI");
-  var span = document.getElementsByClassName("close-button")[0];
+  var imodal = document.getElementById("niModal");
+  var btn = document.getElementById("newI");
+  var span = document.getElementsByClassName("nclose-button")[0];
 
   btn.onclick = function() {imodal.style.display = "block";}
   span.onclick = function() {imodal.style.display = "none";}
