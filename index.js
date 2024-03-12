@@ -14,6 +14,9 @@ app.use(express.static('public'));
 var apiRouter = express.Router();
 app.use(`/api`, apiRouter);
 
+
+// Get Itineraries
+
 // GetScores
 apiRouter.get('/scores', (_req, res) => {
   res.send(scores);
