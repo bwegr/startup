@@ -323,7 +323,7 @@ async function loadItins() {
 }
 
 function displayItins(itins) {
-  const tableBodyEl = document.querySelector('#itins');
+  const tableBodyEl = document.querySelector('#itin');
 
   if (itins.length) {
     // Update the DOM with the itins

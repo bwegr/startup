@@ -67,21 +67,20 @@
           <h4>Create New Itinerary</h4>
         </div>
         <div>
-          <form class="itin">
-            <input type="text" id="newItinerary" placeholder="Enter Itinerary Name" /><br><br>
-            <input type="text" id="newTravellers" placeholder="Enter Travellers" /><br><br>
-            <button type="search" id="search">Add</button>
+          <form class="itin2">
+            <input type="text" id="newItinerary" placeholder="Enter Itinerary Name" /><br>
+            <input type="text" id="newTravellers" placeholder="Enter Travellers" /><br>
+            <input type="text" id="newCountries" placeholder="Enter Countries" /><br>
+            <button type="search" id="search">Create</button>
           </form>
         </div><br>
-        <div class="modal-buttons"> 
-        </div>
       </div>
     </div>
 
 
     <h3>Itineraries</h3>
     <button id="newI" type="search">Create New Itinerary</button>
-    <form class="itin">
+    <form class="itinSearch">
       <input type="text" id="country" placeholder="Search Itineraries" /><br>
       <button type="search" id="search">Search</button>
     </form>
@@ -139,8 +138,8 @@
           <tr>
             <th>#</th>
             <th>Name</th>
-            <th>Score</th>
-            <th>Date</th>
+            <th>Travellers</th>
+            <th>Countries</th>
           </tr>
         </thead>
         <tbody id="itins"></tbody>
