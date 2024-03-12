@@ -353,3 +353,13 @@ function displayItins(itins) {
 
 loadItins();
 
+function createI() {
+  const iName = document.querySelector("#newItinerary");
+  const iTravs = document.querySelector("#newItinerary");
+  const iCouns = document.querySelector("#newItinerary");
+  localStorage.setItem("newIName", iName.value);
+  localStorage.setItem("newITravs", iTravs.value);
+  localStorage.setItem("newICouns", iCouns.value);
+  window.location.href = "itinerary.html";
+}
+
