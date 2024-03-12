@@ -14,7 +14,6 @@ app.use(express.static('public'));
 var apiRouter = express.Router();
 app.use(`/api`, apiRouter);
 
-
 // GetItineraries
 apiRouter.get('/itins', (_req, res) => {
   res.send(itins);
@@ -22,7 +21,7 @@ apiRouter.get('/itins', (_req, res) => {
 
 // CreateNewItinerary
 apiRouter.post('/itin', (req, res) => {
-  //itins = updateScores(req.body, scores);
+  itins = updateItins(req.body, itins);
   res.send(itins);
 });
 
@@ -68,4 +67,20 @@ function updateScores(newScore, scores) {
   }
 
   return scores;
+}
+
+
+let itins = [];
+function updateItins(newItin, itins) {
+  let found = false;
+  for (const [i] of itins.entries()) {
+      itins.splice(i, 0, newItin);
+      found = true;
+    }
+
+  if (!found) {
+    itins.push(newItin);
+  }
+
+  return itins;
 }
