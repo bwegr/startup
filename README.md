@@ -87,3 +87,13 @@ For this deliverable I added some functionality with JavaScript.
   - Itinerary Travelers: Buttons on the Itinerary page now allow the current user to add or remove themselves from that itinerary. Clicking 'Join Itinerary' will allow them to add themselves multiple times (which I will fix), but if they try to remove themselves from the itinerary and they aren't on it, then they will get an error message that says 'You have not joined this itinerary'.
 
 
+## Service deliverable
+
+I kinda hit a wall on this one. I did all the reading, watched the video, and dissected the Simon code, but every attempt I made did not work. I'm not sure what I'm doing wrong but I will connect with a TA to figure it out. I think I may just not being fully understanding the front-end to back-end service concept.
+
+- **Create an HTTP service using Node.js and Express** (40%) - I believe I have this in place. I can use the node command to run my index.js and view it in my browser at the local port 4000.
+- **Frontend served up using Express static middleware** (10%) - I believe this is the code I have in the index.js file.
+- **Frontend 3rd Party API Call** (10%) - I do have this in place with the quote API and it is working (on the About page).
+- **Your backend provides service endpoints** (20%) - I hit a wall here. I thought I had created all the code necessary to do this in the index.js, main.js, and itinerary.html files but nothing seems to be working
+- **Your frontend calls your service endpoints** (20%) - I hit a wall here. I thought I had created all the code necessary to do this in the index.js, main.js, and itinerary.html files but nothing seems to be working
+
