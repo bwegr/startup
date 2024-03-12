@@ -278,6 +278,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
       if (event.target == imodal) {imodal.style.display = "none";}}
 });
 
+// Add To Itinerary Modal 
+document.addEventListener('DOMContentLoaded', (event) => {
+  var imodal = document.getElementById("iModal");
+  var btn = document.getElementById("addToI");
+  var span = document.getElementsByClassName("close-button")[0];
+
+  btn.onclick = function() {imodal.style.display = "block";}
+  span.onclick = function() {imodal.style.display = "none";}
+  window.onclick = function(event) {
+      if (event.target == imodal) {imodal.style.display = "none";}}
+});
+
 // Currency Conversion Rate Websocket Simulator
 function currConv(min, max) {
   return (Math.random() * (max - min) + min).toFixed(2);
