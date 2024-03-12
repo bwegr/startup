@@ -302,54 +302,54 @@ function updateRandomNumber() {
 
 setInterval(updateRandomNumber, 1000); // Update every 1 second
 
-async function loadScores() {
-  let scores = [];
+async function loadItins() {
+  let itins = [];
   try {
     // Get the latest high scores from the service
-    const response = await fetch('/api/scores');
-    scores = await response.json();
+    const response = await fetch('/api/itins');
+    itins = await response.json();
 
     // Save the scores in case we go offline in the future
-    localStorage.setItem('scores', JSON.stringify(scores));
+    localStorage.setItem('itins', JSON.stringify(itins));
   } catch {
     // If there was an error then just use the last saved scores
-    const scoresText = localStorage.getItem('scores');
-    if (scoresText) {
-      scores = JSON.parse(scoresText);
+    const itinsText = localStorage.getItem('itins');
+    if (itinsText) {
+      itins = JSON.parse(itinsText);
     }
   }
 
-  displayScores(scores);
+  displayItins(itins);
 }
 
-function displayScores(scores) {
-  const tableBodyEl = document.querySelector('#scores');
+function displayItins(itins) {
+  const tableBodyEl = document.querySelector('#itins');
 
-  if (scores.length) {
-    // Update the DOM with the scores
-    for (const [i, score] of scores.entries()) {
+  if (itins.length) {
+    // Update the DOM with the itins
+    for (const [i, itin] of itins.entries()) {
       const positionTdEl = document.createElement('td');
       const nameTdEl = document.createElement('td');
-      const scoreTdEl = document.createElement('td');
-      const dateTdEl = document.createElement('td');
+      const travsTdEl = document.createElement('td');
+      const countriesTdEl = document.createElement('td');
 
       positionTdEl.textContent = i + 1;
-      nameTdEl.textContent = score.name;
-      scoreTdEl.textContent = score.score;
-      dateTdEl.textContent = score.date;
+      nameTdEl.textContent = itin.name;
+      travsTdEl.textContent = itin.travs;
+      countriesTdEl.textContent = itin.countries;
 
       const rowEl = document.createElement('tr');
       rowEl.appendChild(positionTdEl);
       rowEl.appendChild(nameTdEl);
-      rowEl.appendChild(scoreTdEl);
-      rowEl.appendChild(dateTdEl);
+      rowEl.appendChild(travsTdEl);
+      rowEl.appendChild(countriesTdEl);
 
       tableBodyEl.appendChild(rowEl);
     }
   } else {
-    tableBodyEl.innerHTML = '<tr><td colSpan=4>Be the first to score</td></tr>';
+    tableBodyEl.innerHTML = '<tr><td colSpan=4>No itineraries yet - start making one above!</td></tr>';
   }
 }
 
-loadScores();
+loadItins();
 

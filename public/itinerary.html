@@ -64,12 +64,12 @@
       <div class="modal-content">
         <span class="nclose-button">&times;</span>
         <div class="modal-buttons">
-          <h4>Welcome <span class="pname">User</span>!</h4>
+          <h4>Create New Itinerary</h4>
         </div>
-        <div class="newi">
-          <form class="newItin">
-            <input type="text" id="country" placeholder="Enter Itinerary Name" /><br>
-            <input type="text" id="country" placeholder="Enter Travellers" /><br>
+        <div>
+          <form class="itin">
+            <input type="text" id="newItinerary" placeholder="Enter Itinerary Name" /><br><br>
+            <input type="text" id="newTravellers" placeholder="Enter Travellers" /><br><br>
             <button type="search" id="search">Add</button>
           </form>
         </div><br>
@@ -134,6 +134,17 @@
         </table>
         <br/>
       </div>
+      <table class="table table-warning table-striped-columns">
+        <thead class="table-dark">
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Score</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody id="itins"></tbody>
+      </table>
     </main>
 
     <footer>
