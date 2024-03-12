@@ -89,7 +89,7 @@ For this deliverable I added some functionality with JavaScript.
 
 ## Service deliverable
 
-I kinda hit a wall on this one. I did all the reading, watched the video, and dissected the Simon code, but every attempt I made did not work. I'm not sure what I'm doing wrong but I will connect with a TA to figure it out. I think I may just not being fully understanding the front-end to back-end service concept.
+I kinda hit a wall on this one. I did all the reading, watched the video, followed all the instructions, and dissected the Simon code, but every attempt I made did not work. I'm not sure what I'm doing wrong but I will connect with a TA to figure it out. I think I may just not being fully understanding the front-end to back-end service concept.
 
 - **Create an HTTP service using Node.js and Express** (40%) - I believe I have this in place. I can use the node command to run my index.js and view it in my browser at the local port 4000.
 - **Frontend served up using Express static middleware** (10%) - I believe this is the code I have in the index.js file.
