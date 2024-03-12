@@ -363,3 +363,44 @@ function createI() {
   window.location.href = "itinerary.html";
 }
 
+async function saveItin(itin) {
+  const iName = document.querySelector("#newItinerary");
+  const iTravs = document.querySelector("#newItinerary");
+  const iCouns = document.querySelector("#newItinerary");
+
+  try {
+    const response = await fetch('/api/itin', {
+      method: 'POST',
+      headers: {'content-type': 'application/json'},
+      body: JSON.stringify(newItin),
+    });
+
+    // Store what the service gave us as the high scores
+    const scores = await response.json();
+    localStorage.setItem('scores', JSON.stringify(scores));
+  } catch {
+    // If there was an error then just track scores locally
+    this.updateScoresLocal(newScore);
+  }
+}
+
+function displayQuote(data) {
+  fetch('https://api.quotable.io/random')
+    .then((response) => response.json())
+    .then((data) => {
+      const containerEl = document.querySelector('#quote');
+
+      const quoteEl = document.createElement('p');
+      quoteEl.classList.add('quote');
+      const authorEl = document.createElement('p');
+      authorEl.classList.add('author');
+
+      quoteEl.textContent = data.content;
+      authorEl.textContent = data.author;
+
+      containerEl.appendChild(quoteEl);
+      containerEl.appendChild(authorEl);
+    });
+}
+
+displayQuote();
