@@ -1,13 +1,9 @@
 const { MongoClient } = require('mongodb');
+const config = require('./dbConfig.json');
 
-const userName = 'holowaychuk';
-const password = 'express';
-const hostname = 'mongodb.com';
-
-const url = `mongodb+srv://${userName}:${password}@${hostname}`;
+const url = `mongodb+srv://${config.userName}:${config.password}@${config.hostname}`;
 
 const client = new MongoClient(url);
-
 const collection = client.db('rental').collection('house');
 
 const house = {
