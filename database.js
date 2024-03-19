@@ -1,24 +1,89 @@
 const { MongoClient } = require('mongodb');
 const config = require('./dbConfig.json');
 
-const url = `mongodb+srv://${config.userName}:${config.password}@${config.hostname}`;
+async function main() {
+  // Connect to the database cluster
+  const url = `mongodb+srv://${config.userName}:${config.password}@${config.hostname}`;
+  const client = new MongoClient(url);
+  const db = client.db('rental');
+  const collection = db.collection('house');
 
-const client = new MongoClient(url);
-const collection = client.db('rental').collection('house');
+  // Test that you can connect to the database
+  (async function testConnection() {
+    await client.connect();
+    await db.command({ ping: 1 });
+  })().catch((ex) => {
+    console.log(`Unable to connect to database with ${url} because ${ex.message}`);
+    process.exit(1);
+  });
 
-const house = {
-  name: 'Beachfront views',
-  summary: 'From your bedroom to the beach, no shoes required',
-  property_type: 'Condo',
-  beds: 1,
-};
-await collection.insertOne(house);
+  // Insert a document
+  const house = {
+    name: 'Beachfront views',
+    summary: 'From your bedroom to the beach, no shoes required',
+    property_type: 'Condo',
+    beds: 1,
+  };
+  await collection.insertOne(house);
 
-const cursor = collection.find();
-const rentals = await cursor.toArray();
-rentals.forEach((i) => console.log(i));
+  // Query the documents
+  const query = { property_type: 'Condo', beds: { $lt: 2 } };
+  const options = {
+    sort: { score: -1 },
+    limit: 10,
+  };
 
-const query = { property_type: 'Condo', beds: { $lt: 2 } };
+  const cursor = collection.find(query, options);
+  const rentals = await cursor.toArray();
+  rentals.forEach((i) => console.log(i));
+}
+
+main().catch(console.error);
+
+
+
+
+
+
+
+
+
+
+// const { MongoClient } = require('mongodb');
+// const config = require('./dbConfig.json');
+
+// const url = `mongodb+srv://${config.userName}:${config.password}@${config.hostname}`;
+
+// const client = new MongoClient(url);
+
+// const db = client.db('rental');
+
+// (async function testConnection() {
+//   await client.connect();
+//   await db.command({ ping: 1 });
+// })().catch((ex) => {
+//   console.log(`Unable to connect to database with ${url} because ${ex.message}`);
+//   process.exit(1);
+// });
+
+
+
+
+// const collection = client.db('rental').collection('house');
+
+// const house = {
+//   name: 'Beachfront views',
+//   summary: 'From your bedroom to the beach, no shoes required',
+//   property_type: 'Condo',
+//   beds: 1,
+// };
+// await collection.insertOne(house);
+
+// const cursor = collection.find();
+// const rentals = await cursor.toArray();
+// rentals.forEach((i) => console.log(i));
+
+// const query = { property_type: 'Condo', beds: { $lt: 2 } };
 
 // const options = {
 //     sort: { price: -1 },
