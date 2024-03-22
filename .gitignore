@@ -1,2 +1,6 @@
 node_modules/
 dbConfig.json
+.DS_Store
+.vscode/
+dbkeys.sh
+cookie.txt
