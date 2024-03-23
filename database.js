@@ -63,8 +63,6 @@ module.exports = {
 };
 
 
-
-
 // TEST //
 async function main() {
   // Connect to the database cluster
